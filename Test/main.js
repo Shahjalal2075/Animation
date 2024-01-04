@@ -1,5 +1,18 @@
-const animate = document.getElementById('animation');
 
+const middle = document.getElementById('middle-photo');
+const middleImg = document.getElementById('middle-img');
+const textm = document.getElementById('bg-text-set-m');
+
+middle.addEventListener('mouseover', function () {
+    middleImg.src = 'assets/img bg.png';
+    textm.innerHTML = `<p class="bg-text">In publishing and graphic design, Lorem ipsum is a placeholder text
+commonly</p>`;
+});
+
+middle.addEventListener('mouseout', function () {
+    middleImg.src = 'assets/img m.png';
+    textm.innerHTML = ``;
+});
 
 const circle2Img = document.getElementById('circle2-img');
 const circle2 = document.getElementById('circle2');

@@ -2,6 +2,7 @@
     width: 100%;
     margin: 0 auto;
     max-width: 1280px;
+    background-color: #EFF3F4;
 }
 
 .card {
@@ -25,6 +26,11 @@
     left: 50%;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+
+}
+
+.square-1 {
+    animation: rotateReverse 16s linear infinite;
 }
 
 .square1 img {
@@ -104,18 +110,13 @@
 }
 
 .photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 85px;
-    border-radius: 50%;
+    position: relative;
 }
 
 
 
 .photo img {
-    width: 90px;
+    width: full;
 }
 
 @keyframes rotateCenter {
